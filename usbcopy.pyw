@@ -1,4 +1,4 @@
-import platform,os,sys,shutil,time
+import platform,os,shutil,time
 
 def hasdrive(letter):
     return "Windows" in platform.system() and os.system(f"{letter}:") == 0
