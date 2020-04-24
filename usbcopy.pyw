@@ -15,8 +15,6 @@ while True:
                 os.chdir(src)
                 shutil.copytree(src,dst)
                 break
-                exit()
             except FileExistsError:
                 exit()
-    print('notdone')
     time.sleep(5)
