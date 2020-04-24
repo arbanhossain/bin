@@ -1,7 +1,7 @@
 import platform,os,sys,shutil,time
 
 def hasdrive(letter):
-    return "Windows" in platform.system() and os.system("vol %s: 2>nul>nul" % (letter)) == 0
+    return "Windows" in platform.system() and os.system(f"{letter}:") == 0
 
 drives = ["H", "I"]
 
